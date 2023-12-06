@@ -9,7 +9,7 @@ public class Player {
 
     private static final Logger log = getLogger(Player.class);
 
-    static final String VERSION = "extra text log message";
+    static final String VERSION = "diff log config";
 
     public static int betRequest(JsonNode request) {
         log.info("hello world");
