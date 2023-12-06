@@ -28,6 +28,8 @@ java {
 dependencies {
     implementation("io.micronaut:micronaut-jackson-databind")
     runtimeOnly("ch.qos.logback:logback-classic")
+
+    runtimeOnly("ch.qos.logback.contrib:logback-json-classic:0.1.5")
 }
 
 graalvmNative.toolchainDetection = false

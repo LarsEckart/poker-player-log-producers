@@ -6,6 +6,13 @@
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
+        <layout class="ch.qos.logback.contrib.json.classic.JsonLayout">
+            <jsonFormatter
+                    class="ch.qos.logback.contrib.jackson.JacksonJsonFormatter">
+                <prettyPrint>true</prettyPrint>
+            </jsonFormatter>
+            <timestampFormat>yyyy-MM-dd' 'HH:mm:ss.SSS</timestampFormat>
+        </layout>
     </appender>
 
     <root level="info">
